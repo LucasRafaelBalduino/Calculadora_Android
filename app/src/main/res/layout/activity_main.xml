@@ -1,0 +1,238 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:id="@+id/matriz" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" tools:context=".MainActivity">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+        <TextView android:id="@+id/txtVisor" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1" android:background="@android:color/darker_gray" android:padding="10sp" android:text="0" android:textAlignment="textEnd" android:textSize="38sp" android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2sp"
+        android:orientation="horizontal"
+        android:padding="5sp">
+
+        <Button
+            android:id="@+id/btn7"
+            android:layout_width="wrap_content"
+            android:layout_height="150px"
+            android:layout_weight="1"
+            android:onClick="btnNumero"
+            android:text="7"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn8"
+            android:layout_width="wrap_content"
+            android:layout_height="150px"
+            android:layout_weight="1"
+            android:onClick="btnNumero"
+            android:text="8"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn9"
+            android:layout_width="wrap_content"
+            android:layout_height="150px"
+            android:layout_weight="1"
+            android:onClick="btnNumero"
+            android:text="9"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnDiv"
+            android:layout_width="wrap_content"
+            android:layout_height="150px"
+            android:layout_weight="1"
+            android:backgroundTint="#884CAF50"
+            android:onClick="btnOperacao"
+            android:text="/"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2sp"
+        android:orientation="horizontal"
+        android:padding="5sp">
+
+        <Button
+            android:id="@+id/btn4"
+            android:layout_width="wrap_content"
+            android:layout_height="150px"
+            android:layout_weight="1"
+            android:onClick="btnNumero"
+            android:text="4"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn5"
+            android:layout_width="wrap_content"
+            android:layout_height="150px"
+            android:layout_weight="1"
+            android:onClick="btnNumero"
+            android:text="5"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn6"
+            android:layout_width="wrap_content"
+            android:layout_height="150px"
+            android:layout_weight="1"
+            android:onClick="btnNumero"
+            android:text="6"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnMult"
+            android:layout_width="wrap_content"
+            android:layout_height="150px"
+            android:layout_weight="1"
+            android:backgroundTint="#884CAF50"
+            android:onClick="btnOperacao"
+            android:text="*"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5sp">
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="150px"
+            android:layout_weight="1"
+            android:onClick="btnNumero"
+            android:text="1"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="150px"
+            android:layout_weight="1"
+            android:onClick="btnNumero"
+            android:text="2"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="wrap_content"
+            android:layout_height="150px"
+            android:layout_weight="1"
+            android:onClick="btnNumero"
+            android:text="3"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnSub"
+            android:layout_width="wrap_content"
+            android:layout_height="150px"
+            android:layout_weight="1"
+            android:backgroundTint="#884CAF50"
+            android:onClick="btnOperacao"
+            android:text="-"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2sp"
+        android:orientation="horizontal"
+        android:padding="5sp">
+
+        <Button
+            android:id="@+id/btn0"
+            android:layout_width="wrap_content"
+            android:layout_height="150px"
+            android:layout_weight="1"
+            android:onClick="btnNumero"
+            android:text="0"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnSeparador"
+            android:layout_width="wrap_content"
+            android:layout_height="150px"
+            android:layout_weight="1"
+            android:backgroundTint="#00BCD4"
+            android:onClick="btnOperacao"
+            android:text=","
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnIgual"
+            android:layout_width="wrap_content"
+            android:layout_height="150px"
+            android:layout_weight="1"
+            android:backgroundTint="#884CAF50"
+            android:onClick="btnOperacao"
+            android:text="="
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnAdi"
+            android:layout_width="wrap_content"
+            android:layout_height="150px"
+            android:layout_weight="1"
+            android:backgroundTint="#884CAF50"
+            android:onClick="btnOperacao"
+            android:text="+"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2sp"
+        android:orientation="horizontal"
+        android:padding="5sp">
+
+        <Button
+            android:id="@+id/btnDel"
+            android:layout_width="wrap_content"
+            android:layout_height="200px"
+            android:layout_weight="1"
+            android:backgroundTint="#8DF44336"
+            android:onClick="apagar"
+            android:text="Apagar"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>
